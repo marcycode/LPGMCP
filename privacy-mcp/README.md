@@ -1,6 +1,6 @@
 # Local Privacy Guardian MCP
 
-**One-liner:** A zero-trust **file firewall for AI**. It intercepts file access from AI tools via MCP, enforces least-privilege policies, **redacts sensitive data** inline, and emits **tamper-evident audit logs**—so users can use AI on their machines without leaking secrets or PII.
+A zero-trust **file firewall for AI**. It intercepts file access from AI tools via MCP, enforces least-privilege policies, **redacts sensitive data** inline, and emits **tamper-evident audit logs**—so users can use AI on their machines without leaking secrets or PII.
 
 ---
 
