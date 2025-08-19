@@ -1,0 +1,12 @@
+{
+  "root_dir": "demo/sandbox",
+  "allow_globs": ["**/*.txt", "**/*.md", "**/*.json"],
+  "deny_globs": ["**/.env", "**/.git/**", "**/node_modules/**"],
+  "allow_extensions": [".txt", ".md", ".json"],
+  "deny_extensions": [".pem", ".key", ".pfx", ".crt"],
+  "max_bytes": 2000000,
+  "redact_on_read": true,
+  "use_presidio": false,
+  "presidio_entities": ["PERSON","EMAIL_ADDRESS","PHONE_NUMBER","CREDIT_CARD","LOCATION"],
+  "redaction_token": "█"
+}

@@ -1,0 +1,34 @@
+[project]
+name = "privacy-mcp"
+version = "0.1.0"
+description = "Local Privacy Guardian MCP: a zero-trust file firewall for AI"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = {text = "MIT"}
+authors = [{name = "Your Name"}]
+dependencies = [
+  "fastmcp>=0.1.0",
+  "presidio-analyzer>=2.2.354",
+  "presidio-anonymizer>=2.2.354",
+  "typer>=0.12.0",
+]
+
+# This must point to a callable in src/privacy_mcp/server.py
+[project.scripts]
+privacy-mcp = "privacy_mcp.server:_main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Tell setuptools your code lives in ./src
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["privacy_mcp*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"

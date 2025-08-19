@@ -1,0 +1,63 @@
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Logs
+logs/
+*.log
+
+# Test outputs
+*.coverage
+.coverage
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Web playground
+web-playground/
+
+# Demo generated files
+demo/sandbox/
+
+# Large files
+*.csv
+*.tsv
+*.xlsx
+*.zip
+*.tar
+*.gz
+*.bak
+
+# Do not ignore policy files or config
+!policy.json
+!demo/policy.json
+
+# Do not ignore README or project files
+!README.md
+!PROJECT.md
+
+# Ignore requests audit logs
+logs/requests.jsonl
+src/privacy_mcp/logs/
+
+# Ignore build artifacts
+dist/
+build/
+
+# Ignore test cache
+.pytest_cache/
+
+# Ignore node modules (if any)
+node_modules/

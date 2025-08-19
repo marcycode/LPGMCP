@@ -1,0 +1,8 @@
+
+Customer Intake Form
+Name: Juan Meyer
+Email: tanya39@example.org
+Phone: 001-787-392-7904
+Canadian SIN: 528-218-992
+Credit Card: 271131179104083
+Notes: prefers contact after 6pm ET.
